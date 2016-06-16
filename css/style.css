@@ -8,37 +8,83 @@ body{
 
 
 .home-wrapper{
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/background.jpg') no-repeat center top;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../images/background.jpeg') no-repeat center top;
   background-size: cover;
   color: #ffffff;
 }
 header{
-  padding: 10px 0;
+  padding: 10px;
   position: fixed;
   width: 100%;
-  background-color: rgba(40, 38, 38, 0.5);
+  background-color: rgb(65, 65, 65);
+  text-align: -moz-center;
 }
 
 header img{
-  width: 200px;
+  width: 27%;
 }
 
 header nav{
   float: right;
   margin-top: 10px;
+  font-size: medium;
 }
 
-header nav a {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  margin-left: 10px;
-  padding: 10px 15px;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 3px;
+    border-top: 3px;
+    border-bottom: 3px;
+    border-left: 3px;
+    border-right: 3px;
+    border-width: 3px;
+    background-color:rgb(65, 65, 65);
 }
 
-header nav a.active {
-  background: #168b8b;
-  border-radius: 3px;
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #168b8b;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 #home{
@@ -97,7 +143,7 @@ header nav a.active {
   color: white;
   display: inline-block;
   border-radius: 50%;
-  background-color: rgb(60, 199, 204);
+  background-color: rgb(73, 241, 247);
   font-size: 24px;
   font-weight: bold;
   height: 50px;
@@ -110,15 +156,15 @@ header nav a.active {
 }
 
 #home .twitter:hover {
-  background-color: rgb(0, 188, 194);
+  background-color: rgb(0, 206, 213);
   cursor: pointer;
 }
 
-#home .github {
+#home .googleplus {
   color: white;
   display: inline-block;
   border-radius: 50%;
-  background-color: rgb(126, 132, 135);
+  background-color: rgb(242, 78, 78);
   font-size: 24px;
   font-weight: bold;
   height: 50px;
@@ -129,8 +175,8 @@ header nav a.active {
   -o-transition: all .3s;
   transition: all .3s;
 }
-#home .github:hover {
-  background-color: rgb(76, 81, 83);
+#home .googleplus:hover {
+  background-color: rgb(227, 35, 35);
   cursor: pointer;
 }
 
@@ -141,8 +187,19 @@ header nav a.active {
   padding: 10px;
 }
 
+
+#vencimientos .box{
+  display: inline-block;
+  text-align: center;
+  width: 33%;
+  padding: 10px;
+}
+
+
 #portafolio{
-  background-color: whitesmoke;
+  background: #168b8b;
+  background-size: cover;
+  color: #ffffff;
 }
 
 #portafolio .box{
@@ -164,10 +221,11 @@ width: 100%;
 
 #contacto{
   background-color: #303030;
-  background-image: url('../images/map-image.png');
+  background: rgb(65, 65, 65);
   background-position: center;
   background-repeat: none;
   text-align: center;
+  width: 100%;
 }
 
 
@@ -181,6 +239,9 @@ width: 100%;
   border: 1px solid #ccc;
   border-radius: 3px;
 }
+#contacto input:hover{
+  border-color: rgb(0, 17, 247);
+}
 
 #contacto textarea{
   margin: 20px 0;
@@ -189,23 +250,35 @@ width: 100%;
 }
 
 #contacto button{
-  background-color: #168b8b;
+  background-color: rgb(65, 65, 65);
   padding: 20px 40px;
-  border-color: #168b8b;
+  border-color: rgb(65, 65, 65);
   border-radius: 3px;
+  color: white;
   font-size: 18px;
   line-height: 1;
+  width: 20%;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 
 }
 
 #contacto button:hover{
   cursor: pointer;
-  background-color: #0e7a7a;
+  background-color: #168b8b;
+  border-color: #168b8b;
+  width: 29%;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
+
 footer{
+  background: #b1b1b1;
   text-align: center;
-  padding: 90px 0;
+  padding: 50px 0;
   font-size: 18px;
 }
 
